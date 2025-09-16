@@ -18,7 +18,10 @@ public class Deck implements CardSource {
     public void shuffle() {
         Collections.shuffle(this.aCards);
     }
-
+    public void sortCards() {
+        Collections.sort(this.aCards);
+       // compareTo(this.aCards);
+    }
     public Card draw() {
         int last = this.aCards.size()-1;
         Card myCard = this.aCards.get(last);
